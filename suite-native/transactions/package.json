@@ -30,7 +30,7 @@
         "@suite-native/helpers": "workspace:*",
         "@suite-native/module-settings": "workspace:*",
         "@suite-native/navigation": "workspace:*",
-        "@trezor/blockchain-link-types": "workspace:*",
+        "@trezor/blockchain-link-types": "1.0.0",
         "@trezor/styles": "workspace:*",
         "@trezor/theme": "workspace:*",
         "jotai": "1.9.1",
@@ -40,7 +40,7 @@
         "react-native-gesture-handler": "^2.9.0",
         "react-native-reanimated": "3.1.0",
         "react-redux": "8.0.5",
-        "web3-utils": "^1.8.2"
+        "web3-utils": "^1.10.1"
     },
     "devDependencies": {
         "jest": "^26.6.3"
