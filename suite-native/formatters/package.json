@@ -21,11 +21,11 @@
         "@suite-native/ethereum-tokens": "workspace:*",
         "@suite-native/fiat-rates": "workspace:*",
         "@suite-native/module-settings": "workspace:*",
-        "@trezor/blockchain-link": "workspace:*",
+        "@trezor/blockchain-link": "1.0.1",
         "@trezor/styles": "workspace:*",
         "bignumber.js": "^9.1.1",
         "react": "18.2.0",
-        "react-native": "0.71.7",
+        "react-native": "0.76.0",
         "react-redux": "8.0.5",
         "web3-utils": "^1.8.2"
     }
