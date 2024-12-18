@@ -11,7 +11,7 @@
         "chalk": "^4.1.2",
         "fs-extra": "^11.1.1",
         "prettier": "2.8.7",
-        "sort-package-json": "^1.57.0",
+        "sort-package-json": "^2.10.2",
         "yargs": "17.7.1"
     },
     "devDependencies": {
