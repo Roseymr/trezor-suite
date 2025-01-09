@@ -51,10 +51,10 @@
     "dependencies": {
         "@trezor/blockchain-link": "1.0.1",
         "@trezor/connect-analytics": "workspace:*",
-        "@trezor/connect-common": "workspace:*",
-        "@trezor/transport": "workspace:*",
+        "@trezor/connect-common": "0.0.1",
+        "@trezor/transport": "1.0.0",
         "@trezor/utils": "workspace:*",
-        "@trezor/utxo-lib": "workspace:*",
+        "@trezor/utxo-lib": "0.0.2",
         "bignumber.js": "^9.1.1",
         "blakejs": "^1.2.1",
         "cross-fetch": "^3.1.5",
