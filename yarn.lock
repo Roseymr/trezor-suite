@@ -4719,6 +4719,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/core@npm:^7.3.1":
+  version: 7.3.1
+  resolution: "@react-navigation/core@npm:7.3.1"
+  dependencies:
+    "@react-navigation/routers": ^7.1.2
+    escape-string-regexp: ^4.0.0
+    nanoid: 3.3.8
+    query-string: ^7.1.3
+    react-is: ^18.2.0
+    use-latest-callback: ^0.2.1
+    use-sync-external-store: ^1.2.2
+  peerDependencies:
+    react: ">= 18.2.0"
+  checksum: 609482947cd32e878a0ed68da5d870cd4d40b64d123c55cb4b61e6fe7be43d66537416e0bf4a417d91a70a2eb428dfc5f59a76a11ded7e26454af2d872b80508
+  languageName: node
+  linkType: hard
+
 "@react-navigation/elements@npm:^1.3.14, @react-navigation/elements@npm:^1.3.16":
   version: 1.3.16
   resolution: "@react-navigation/elements@npm:1.3.16"
@@ -4762,12 +4779,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/native@npm:^7.0.14":
+  version: 7.0.14
+  resolution: "@react-navigation/native@npm:7.0.14"
+  dependencies:
+    "@react-navigation/core": ^7.3.1
+    escape-string-regexp: ^4.0.0
+    fast-deep-equal: ^3.1.3
+    nanoid: 3.3.8
+    use-latest-callback: ^0.2.1
+  peerDependencies:
+    react: ">= 18.2.0"
+    react-native: "*"
+  checksum: 2bc64d232fa467ad08a02cd7e6120e970e7d2bef8614759acfe1f4fcb08f08b606e6f838fda6a4c392f5464bf21bbd7782c6d48b5e1d9f9f7762b11fbdd2ea8d
+  languageName: node
+  linkType: hard
+
 "@react-navigation/routers@npm:^6.1.6":
   version: 6.1.6
   resolution: "@react-navigation/routers@npm:6.1.6"
   dependencies:
     nanoid: ^3.1.23
   checksum: 3e765b66cf3e94b9194cfffe8ba6fa51e6652e8f9d8fed713ac76f6ad9e2bd5af5590d83e546efb71455bd6bf2ab1faefcf7f1b0c24b15324c4fe1b8246f8dab
+  languageName: node
+  linkType: hard
+
+"@react-navigation/routers@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "@react-navigation/routers@npm:7.1.2"
+  dependencies:
+    nanoid: 3.3.8
+  checksum: 651170c4201963eb478b9439738173a1dd0a6500a3ad5cecd78c61846086de56f0b9cec1f21f902c3705da99844086186320dab7700cec25be84bc463cd90475
   languageName: node
   linkType: hard
 
@@ -6426,7 +6468,7 @@ __metadata:
     "@suite-common/suite-types": "workspace:*"
     "@suite-common/wallet-config": "workspace:*"
     "@suite-common/wallet-types": "workspace:*"
-    "@trezor/connect": "workspace:*"
+    "@trezor/connect": 9.0.0
     jest: ^26.6.3
     react: 18.2.0
     react-redux: 8.0.5
@@ -6645,7 +6687,7 @@ __metadata:
   resolution: "@suite-native/accounts@workspace:suite-native/accounts"
   dependencies:
     "@mobily/ts-belt": ^3.13.1
-    "@react-navigation/native": ^6.1.3
+    "@react-navigation/native": ^7.0.14
     "@suite-common/formatters": "workspace:*"
     "@suite-common/icons": "workspace:*"
     "@suite-common/wallet-config": "workspace:*"
@@ -6775,7 +6817,7 @@ __metadata:
     "@suite-common/wallet-utils": "workspace:*"
     "@suite-native/fiat-rates": "workspace:*"
     "@suite-native/module-settings": "workspace:*"
-    "@trezor/blockchain-link": "workspace:*"
+    "@trezor/blockchain-link": 1.0.1
     proxy-memoize: ^2.0.2
     react: 18.2.0
   languageName: unknown
@@ -6794,7 +6836,7 @@ __metadata:
     "@suite-common/wallet-core": "workspace:*"
     "@suite-common/wallet-types": "workspace:*"
     "@suite-common/wallet-utils": "workspace:*"
-    "@trezor/connect": "workspace:*"
+    "@trezor/connect": 9.0.0
     date-fns: ^2.29.3
     proxy-memoize: ^2.0.2
   languageName: unknown
@@ -6814,7 +6856,7 @@ __metadata:
     "@suite-native/ethereum-tokens": "workspace:*"
     "@suite-native/fiat-rates": "workspace:*"
     "@suite-native/module-settings": "workspace:*"
-    "@trezor/blockchain-link": "workspace:*"
+    "@trezor/blockchain-link": 1.0.1
     "@trezor/styles": "workspace:*"
     bignumber.js: ^9.1.1
     react: 18.2.0
@@ -6952,7 +6994,7 @@ __metadata:
   resolution: "@suite-native/module-accounts@workspace:suite-native/module-accounts"
   dependencies:
     "@mobily/ts-belt": ^3.13.1
-    "@react-navigation/native": ^6.1.3
+    "@react-navigation/native": ^7.0.14
     "@react-navigation/native-stack": ^6.9.11
     "@reduxjs/toolkit": 1.9.3
     "@suite-common/icons": "workspace:*"
@@ -6980,7 +7022,7 @@ __metadata:
     jotai: 1.9.1
     react: 18.2.0
     react-hook-form: 6.15.7
-    react-native: 0.71.7
+    react-native: 0.73.0
     react-native-reanimated: 3.1.0
     react-redux: 8.0.5
   languageName: unknown
@@ -7077,7 +7119,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@suite-native/module-receive@workspace:suite-native/module-receive"
   dependencies:
-    "@react-navigation/native": ^6.1.3
+    "@react-navigation/native": ^7.0.14
     "@react-navigation/native-stack": ^6.9.11
     "@suite-common/icons": "workspace:*"
     "@suite-common/wallet-core": "workspace:*"
@@ -7162,7 +7204,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@suite-native/notifications@workspace:suite-native/notifications"
   dependencies:
-    "@react-navigation/native": ^6.1.3
+    "@react-navigation/native": ^7.0.14
     "@suite-common/icons": "workspace:*"
     "@suite-common/toast-notifications": "workspace:*"
     "@suite-common/wallet-config": "workspace:*"
@@ -7543,7 +7585,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/blockchain-link@workspace:*, @trezor/blockchain-link@workspace:packages/blockchain-link":
+"@trezor/blockchain-link@^2.1.3, @trezor/blockchain-link@workspace:*, @trezor/blockchain-link@workspace:packages/blockchain-link":
   version: 0.0.0-use.local
   resolution: "@trezor/blockchain-link@workspace:packages/blockchain-link"
   dependencies:
@@ -7570,6 +7612,16 @@ __metadata:
     ws: 7.5.9
   languageName: unknown
   linkType: soft
+
+"@trezor/blockchain-link@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@trezor/blockchain-link@npm:1.0.1"
+  dependencies:
+    es6-promise: ^4.2.8
+    events: ^3.0.0
+  checksum: 4580fc8f8210a3bc06e1437316baefd9fa0348a6f28ae3ea9994d0c2f982478cae1fdffaf9aa9f65525b2adaaa65ba211544d6d28a60a42b57d7fb1077b1496a
+  languageName: node
+  linkType: hard
 
 "@trezor/coinjoin@workspace:*, @trezor/coinjoin@workspace:packages/coinjoin":
   version: 0.0.0-use.local
@@ -7649,6 +7701,13 @@ __metadata:
     typescript: 4.9.5
   languageName: unknown
   linkType: soft
+
+"@trezor/connect-common@npm:0.0.9":
+  version: 0.0.9
+  resolution: "@trezor/connect-common@npm:0.0.9"
+  checksum: fb71533a2ae73de6257c8e4159eefd4fd4a96c1708ec5388ac40317e46867eb07f1b49c48ee3498cf660b82611e59ceda2f34d4154416fe11003439760a92992
+  languageName: node
+  linkType: hard
 
 "@trezor/connect-common@workspace:*, @trezor/connect-common@workspace:packages/connect-common":
   version: 0.0.0-use.local
@@ -7828,11 +7887,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@trezor/connect@npm:9.0.0":
+  version: 9.0.0
+  resolution: "@trezor/connect@npm:9.0.0"
+  dependencies:
+    "@trezor/blockchain-link": ^2.1.3
+    "@trezor/connect-common": 0.0.9
+    "@trezor/transport": ^1.1.4
+    "@trezor/utils": ^9.0.2
+    "@trezor/utxo-lib": ^1.0.0
+    bignumber.js: ^9.1.0
+    blakejs: ^1.2.1
+    bowser: ^2.11.0
+    cross-fetch: ^3.1.5
+    events: ^3.3.0
+    parse-uri: 1.0.7
+    randombytes: 2.1.0
+    tslib: ^2.3.1
+  checksum: 6f77d08084ffc448bd90b79e0ec856a65f4f30ee76dc33c472333906175197d0fb058a28f9b9225c3d8e7ece2c86c13a39a72145a061714a76accf1b14361c26
+  languageName: node
+  linkType: hard
+
 "@trezor/connect@workspace:*, @trezor/connect@workspace:packages/connect":
   version: 0.0.0-use.local
   resolution: "@trezor/connect@workspace:packages/connect"
   dependencies:
-    "@trezor/blockchain-link": "workspace:*"
+    "@trezor/blockchain-link": 1.0.1
     "@trezor/connect-analytics": "workspace:*"
     "@trezor/connect-common": "workspace:*"
     "@trezor/transport": "workspace:*"
@@ -8159,7 +8239,7 @@ __metadata:
     openpgp: ^5.7.0
     playwright: ^1.32.1
     rimraf: ^4.4.1
-    systeminformation: ^5.17.12
+    systeminformation: ^5.23.8
     tsx: ^3.12.6
     typescript: 4.9.5
     xvfb-maybe: ^0.2.1
@@ -8455,7 +8535,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/transport@workspace:*, @trezor/transport@workspace:packages/transport":
+"@trezor/transport@^1.1.4, @trezor/transport@workspace:*, @trezor/transport@workspace:packages/transport":
   version: 0.0.0-use.local
   resolution: "@trezor/transport@workspace:packages/transport"
   dependencies:
@@ -8507,7 +8587,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/utils@workspace:*, @trezor/utils@workspace:packages/utils":
+"@trezor/utils@^9.0.2, @trezor/utils@workspace:*, @trezor/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@trezor/utils@workspace:packages/utils"
   dependencies:
@@ -8518,7 +8598,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/utxo-lib@workspace:*, @trezor/utxo-lib@workspace:packages/utxo-lib":
+"@trezor/utxo-lib@^1.0.0, @trezor/utxo-lib@workspace:*, @trezor/utxo-lib@workspace:packages/utxo-lib":
   version: 0.0.0-use.local
   resolution: "@trezor/utxo-lib@workspace:packages/utxo-lib"
   dependencies:
@@ -12043,6 +12123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:^9.1.0":
+  version: 9.1.2
+  resolution: "bignumber.js@npm:9.1.2"
+  checksum: 582c03af77ec9cb0ebd682a373ee6c66475db94a4325f92299621d544aa4bd45cb45fd60001610e94aef8ae98a0905fa538241d9638d4422d57abbeeac6fadaf
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -12199,6 +12286,13 @@ __metadata:
   version: 3.2.0
   resolution: "boolean@npm:3.2.0"
   checksum: fb29535b8bf710ef45279677a86d14f5185d604557204abd2ca5fa3fb2a5c80e04d695c8dbf13ab269991977a79bb6c04b048220a6b2a3849853faa94f4a7d77
+  languageName: node
+  linkType: hard
+
+"bowser@npm:^2.11.0":
+  version: 2.11.0
+  resolution: "bowser@npm:2.11.0"
+  checksum: 29c3f01f22e703fa6644fc3b684307442df4240b6e10f6cfe1b61c6ca5721073189ca97cdeedb376081148c8518e33b1d818a57f781d70b0b70e1f31fb48814f
   languageName: node
   linkType: hard
 
@@ -16161,7 +16255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"es6-promise@npm:^4.2.4":
+"es6-promise@npm:^4.2.4, es6-promise@npm:^4.2.8":
   version: 4.2.8
   resolution: "es6-promise@npm:4.2.8"
   checksum: 95614a88873611cb9165a85d36afa7268af5c03a378b35ca7bda9508e1d4f1f6f19a788d4bc755b3fd37c8ebba40782018e02034564ff24c9d6fa37e959ad57d
@@ -25132,6 +25226,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:3.3.8":
+  version: 3.3.8
+  resolution: "nanoid@npm:3.3.8"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: dfe0adbc0c77e9655b550c333075f51bb28cfc7568afbf3237249904f9c86c9aaaed1f113f0fddddba75673ee31c758c30c43d4414f014a52a7a626efc5958c9
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.1.23, nanoid@npm:^3.1.3, nanoid@npm:^3.3.1, nanoid@npm:^3.3.4":
   version: 3.3.4
   resolution: "nanoid@npm:3.3.4"
@@ -26312,6 +26415,13 @@ __metadata:
   dependencies:
     pngjs: ^3.3.0
   checksum: 0c6b6c42c8830cd16f6f9e9aedafd53111c0ad2ff350ba79c629996887567558f5639ad0c95764f96f7acd1f9ff63d4ac73737e80efa3911a6de9839ee520c96
+  languageName: node
+  linkType: hard
+
+"parse-uri@npm:1.0.7":
+  version: 1.0.7
+  resolution: "parse-uri@npm:1.0.7"
+  checksum: 0d4386a586bda98bcdd041f9b1a7e9a6c16bc2ab198c90531f2d169eb2eb520477cc059a75c5cf0695eb3c9e69ff6b90793d07781ab83e2de1cbb255ec66e37f
   languageName: node
   linkType: hard
 
@@ -31689,12 +31799,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"systeminformation@npm:^5.17.12":
-  version: 5.17.12
-  resolution: "systeminformation@npm:5.17.12"
+"systeminformation@npm:^5.23.8":
+  version: 5.23.14
+  resolution: "systeminformation@npm:5.23.14"
   bin:
     systeminformation: lib/cli.js
-  checksum: 0f005bb0a00eaa08ee2d04afc7fde688440e2fc85f09cf247b74dac0f5d08fdd24cad0c233733f1eb69721085efc5beb425afe814e5fa9f5d1aaa4cbe523e5cc
+  checksum: 357edd8c82f2f26635396897f647cbb190075e677f84840e151f3bdf7b6b0361ae9267ae8cf1e09c337db52be1ce114648487d3e18b923488a66a7d8162a3c28
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
@@ -32562,6 +32672,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.3.1":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
+  languageName: node
+  linkType: hard
+
 "tsscmp@npm:1.0.6":
   version: 1.0.6
   resolution: "tsscmp@npm:1.0.6"
@@ -33328,6 +33445,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-latest-callback@npm:^0.2.1":
+  version: 0.2.3
+  resolution: "use-latest-callback@npm:0.2.3"
+  peerDependencies:
+    react: ">=16.8"
+  checksum: 5db2dc0d414508c768ba4d1a337bd73dd0fb2a77eccc9dd7051517b28cd71c849c5e9230b5c97fc76a3811c1500f210cb4e4ebb95fe20347e5f910509a8e533c
+  languageName: node
+  linkType: hard
+
 "use-sidecar@npm:^1.1.2":
   version: 1.1.2
   resolution: "use-sidecar@npm:1.1.2"
@@ -33350,6 +33476,15 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.2.2":
+  version: 1.4.0
+  resolution: "use-sync-external-store@npm:1.4.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: dc3843a1b59ac8bd01417bd79498d4c688d5df8bf4801be50008ef4bfaacb349058c0b1605b5b43c828e0a2d62722d7e861573b3f31cea77a7f23e8b0fc2f7e3
   languageName: node
   linkType: hard
 
