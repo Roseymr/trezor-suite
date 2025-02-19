@@ -6794,7 +6794,7 @@ __metadata:
     "@suite-common/wallet-core": "workspace:*"
     "@suite-common/wallet-types": "workspace:*"
     "@suite-common/wallet-utils": "workspace:*"
-    "@trezor/connect": "workspace:*"
+    "@trezor/connect": 9.0.0
     date-fns: ^2.29.3
     proxy-memoize: ^2.0.2
   languageName: unknown
@@ -7543,7 +7543,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/blockchain-link@workspace:*, @trezor/blockchain-link@workspace:packages/blockchain-link":
+"@trezor/blockchain-link@^2.1.3, @trezor/blockchain-link@workspace:*, @trezor/blockchain-link@workspace:packages/blockchain-link":
   version: 0.0.0-use.local
   resolution: "@trezor/blockchain-link@workspace:packages/blockchain-link"
   dependencies:
@@ -7649,6 +7649,13 @@ __metadata:
     typescript: 4.9.5
   languageName: unknown
   linkType: soft
+
+"@trezor/connect-common@npm:0.0.9":
+  version: 0.0.9
+  resolution: "@trezor/connect-common@npm:0.0.9"
+  checksum: fb71533a2ae73de6257c8e4159eefd4fd4a96c1708ec5388ac40317e46867eb07f1b49c48ee3498cf660b82611e59ceda2f34d4154416fe11003439760a92992
+  languageName: node
+  linkType: hard
 
 "@trezor/connect-common@workspace:*, @trezor/connect-common@workspace:packages/connect-common":
   version: 0.0.0-use.local
@@ -7827,6 +7834,27 @@ __metadata:
     xvfb-maybe: ^0.2.1
   languageName: unknown
   linkType: soft
+
+"@trezor/connect@npm:9.0.0":
+  version: 9.0.0
+  resolution: "@trezor/connect@npm:9.0.0"
+  dependencies:
+    "@trezor/blockchain-link": ^2.1.3
+    "@trezor/connect-common": 0.0.9
+    "@trezor/transport": ^1.1.4
+    "@trezor/utils": ^9.0.2
+    "@trezor/utxo-lib": ^1.0.0
+    bignumber.js: ^9.1.0
+    blakejs: ^1.2.1
+    bowser: ^2.11.0
+    cross-fetch: ^3.1.5
+    events: ^3.3.0
+    parse-uri: 1.0.7
+    randombytes: 2.1.0
+    tslib: ^2.3.1
+  checksum: 6f77d08084ffc448bd90b79e0ec856a65f4f30ee76dc33c472333906175197d0fb058a28f9b9225c3d8e7ece2c86c13a39a72145a061714a76accf1b14361c26
+  languageName: node
+  linkType: hard
 
 "@trezor/connect@workspace:*, @trezor/connect@workspace:packages/connect":
   version: 0.0.0-use.local
@@ -8455,7 +8483,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/transport@workspace:*, @trezor/transport@workspace:packages/transport":
+"@trezor/transport@^1.1.4, @trezor/transport@workspace:*, @trezor/transport@workspace:packages/transport":
   version: 0.0.0-use.local
   resolution: "@trezor/transport@workspace:packages/transport"
   dependencies:
@@ -8507,7 +8535,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/utils@workspace:*, @trezor/utils@workspace:packages/utils":
+"@trezor/utils@^9.0.2, @trezor/utils@workspace:*, @trezor/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@trezor/utils@workspace:packages/utils"
   dependencies:
@@ -8518,7 +8546,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@trezor/utxo-lib@workspace:*, @trezor/utxo-lib@workspace:packages/utxo-lib":
+"@trezor/utxo-lib@^1.0.0, @trezor/utxo-lib@workspace:*, @trezor/utxo-lib@workspace:packages/utxo-lib":
   version: 0.0.0-use.local
   resolution: "@trezor/utxo-lib@workspace:packages/utxo-lib"
   dependencies:
@@ -12043,6 +12071,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bignumber.js@npm:^9.1.0":
+  version: 9.1.2
+  resolution: "bignumber.js@npm:9.1.2"
+  checksum: 582c03af77ec9cb0ebd682a373ee6c66475db94a4325f92299621d544aa4bd45cb45fd60001610e94aef8ae98a0905fa538241d9638d4422d57abbeeac6fadaf
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -12199,6 +12234,13 @@ __metadata:
   version: 3.2.0
   resolution: "boolean@npm:3.2.0"
   checksum: fb29535b8bf710ef45279677a86d14f5185d604557204abd2ca5fa3fb2a5c80e04d695c8dbf13ab269991977a79bb6c04b048220a6b2a3849853faa94f4a7d77
+  languageName: node
+  linkType: hard
+
+"bowser@npm:^2.11.0":
+  version: 2.11.0
+  resolution: "bowser@npm:2.11.0"
+  checksum: 29c3f01f22e703fa6644fc3b684307442df4240b6e10f6cfe1b61c6ca5721073189ca97cdeedb376081148c8518e33b1d818a57f781d70b0b70e1f31fb48814f
   languageName: node
   linkType: hard
 
@@ -25133,11 +25175,11 @@ __metadata:
   linkType: hard
 
 "nanoid@npm:^3.1.23, nanoid@npm:^3.1.3, nanoid@npm:^3.3.1, nanoid@npm:^3.3.4":
-  version: 3.3.4
-  resolution: "nanoid@npm:3.3.4"
+  version: 3.3.8
+  resolution: "nanoid@npm:3.3.8"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 2fddd6dee994b7676f008d3ffa4ab16035a754f4bb586c61df5a22cf8c8c94017aadd360368f47d653829e0569a92b129979152ff97af23a558331e47e37cd9c
+  checksum: dfe0adbc0c77e9655b550c333075f51bb28cfc7568afbf3237249904f9c86c9aaaed1f113f0fddddba75673ee31c758c30c43d4414f014a52a7a626efc5958c9
   languageName: node
   linkType: hard
 
@@ -26312,6 +26354,13 @@ __metadata:
   dependencies:
     pngjs: ^3.3.0
   checksum: 0c6b6c42c8830cd16f6f9e9aedafd53111c0ad2ff350ba79c629996887567558f5639ad0c95764f96f7acd1f9ff63d4ac73737e80efa3911a6de9839ee520c96
+  languageName: node
+  linkType: hard
+
+"parse-uri@npm:1.0.7":
+  version: 1.0.7
+  resolution: "parse-uri@npm:1.0.7"
+  checksum: 0d4386a586bda98bcdd041f9b1a7e9a6c16bc2ab198c90531f2d169eb2eb520477cc059a75c5cf0695eb3c9e69ff6b90793d07781ab83e2de1cbb255ec66e37f
   languageName: node
   linkType: hard
 
@@ -32559,6 +32608,13 @@ __metadata:
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.3.1":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
   languageName: node
   linkType: hard
 
