@@ -12,11 +12,11 @@
         "test:unit": "jest -c ../../jest.config.base.js --passWithNoTests"
     },
     "dependencies": {
-        "@sentry/electron": "^4.3.0",
+        "@sentry/electron": "^4.15.0",
         "@suite-common/formatters": "workspace:*",
         "@suite-common/sentry": "workspace:*",
         "@trezor/components": "workspace:*",
-        "@trezor/connect": "workspace:*",
+        "@trezor/connect": "9.0.0",
         "@trezor/ipc-proxy": "workspace:*",
         "@trezor/suite": "workspace:*",
         "@trezor/suite-analytics": "workspace:*",
