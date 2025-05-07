@@ -29,7 +29,7 @@
         "build:lib": "rimraf lib && tsc --build ./tsconfig.lib.json"
     },
     "dependencies": {
-        "@trezor/blockchain-link": "workspace:*",
+        "@trezor/blockchain-link": "1.0.1",
         "@trezor/blockchain-link-types": "workspace:*",
         "@trezor/blockchain-link-utils": "workspace:*",
         "@trezor/utils": "workspace:*",
