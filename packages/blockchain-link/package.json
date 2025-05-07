@@ -65,10 +65,10 @@
         "worker-loader": "^3.0.8"
     },
     "dependencies": {
-        "@trezor/blockchain-link-types": "workspace:*",
-        "@trezor/blockchain-link-utils": "workspace:*",
-        "@trezor/utils": "workspace:*",
-        "@trezor/utxo-lib": "workspace:*",
+        "@trezor/blockchain-link-types": "1.0.0",
+        "@trezor/blockchain-link-utils": "1.0.0",
+        "@trezor/utils": "1.0.0",
+        "@trezor/utxo-lib": "0.0.2",
         "@types/web": "^0.0.99",
         "bignumber.js": "^9.1.1",
         "events": "^3.3.0",
