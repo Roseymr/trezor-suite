@@ -14,7 +14,7 @@
         "build:lib": "rimraf lib && yarn tsc --build ./tsconfig.lib.json"
     },
     "dependencies": {
-        "@trezor/analytics": "workspace:*"
+        "@trezor/analytics": "1.0.0"
     },
     "devDependencies": {
         "typescript": "4.9.5"
